@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+	<script src="./js/perros.js"></script>
+  <script src="./js/cartService.js" defer></script>
+	<script src="./js/cart.js" defer></script>
+	<title>Carrito de compras</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="./index.html"><img src="img/patitaslogo.svg" alt="Logo" id="logo"></a>
+			<div>
+				<a href="index.html">INICIO</a>
+				<a href="#">PERROS</a>
+				<a href="#">GATOS</a>
+				<a href="#">UBICACIÓN</a>
+				<a href="#">CONTACTO</a>
+				<a href="./cart.html" id="cart"><img src="./img/iconos/shopping-cart.png" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html#productos-container">elegí algunos productos</a></p>
+		<section id="cart-container">
+		</section>
+  <section id="totales">
+    <p>Cantidad de productos: <span id="cantidad">0</span></p>
+    <p>Total: $<span id="precio">0</span></p>
+    <button id="Finalizar" disabled>Finalizar compra</button>
+	<button id="seguir-comprando">Seguir comprando</button>
+
+	    <button id="reiniciar">Vaciar carrito</button>
+
+
+  </section>
+</main>
+	<footer>
+		<p> © PATITAS PET SHOP 2024. Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>
